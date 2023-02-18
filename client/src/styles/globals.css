@@ -55,6 +55,10 @@
   );
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .bg-black-gradient-2 {
   background: linear-gradient(
     -168.39deg,

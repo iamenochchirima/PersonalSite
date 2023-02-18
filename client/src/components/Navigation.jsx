@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import { GrClose } from "react-icons/gr";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 
@@ -8,24 +6,23 @@ const Navigation = () => {
   const [toggle, settoggle] = useState(false);
 
   return (
-    <nav className="w-full py-6 flex justify-between items-center navbar">
-      <h1 className="text-xl font-bold ">Enoch Chirima</h1>
-      <ul className="list-none flex-1 items-center sm:flex hidden justify-end ">
+    <nav className="w-full pt-1 flex justify-between items-center navbar">
+      <ul className="list-none flex-1 items-center sm:flex hidden justify-end m-4">
         <li className={`font-normal cursor-pointer text-[16px] mr-10`}>
           <a href="">Home</a>
         </li>
         <li className={`font-normal cursor-pointer text-[16px] mr-10`}>
-          <a href="">Contact</a>
+          <a href="">About</a>
         </li>
         <li className={`font-normal cursor-pointer text-[16px] mr-10`}>
           <a href="">Blog </a>
         </li>
         <li>
           <a
-            className="cursor-pointer bg-gradient-to-r from-cyan-500 to-blue-700 text-white px-4 py-2 rounded-md ml-4"
+            className="cursor-pointer bg-gradient-to-r from-cyan-500 to-dimBlue text-white px-4 py-2 rounded-md ml-4"
             href=""
           >
-            Resume
+            Download CV
           </a>
         </li>
       </ul>
