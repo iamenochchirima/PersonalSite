@@ -30,7 +30,7 @@ export const projects = [
   {
     id: 2,
     title: "Commerce",
-    imageSrc: "/setup2.jpg",
+    imageSrc: "/setup1.jpg",
     description: "My Second Project",
     tools: ["React", "Node.js", "Express", "MongoDB"],
     codeLink: "https://github.com/yourusername/yourproject",

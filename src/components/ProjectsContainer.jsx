@@ -19,7 +19,7 @@ const ProjectsContainer = () => {
               className="max-w-sm rounded-md overflow-hidden shadow-slate-400 shadow-md  md:col-span-1 lg:col-span-1 my-10 mx-4"
               key={project.id}
             >
-              <Image src={project.imageSrc} width={500} height={500} />
+              <Image src={project.imageSrc} alt="project-image" width={500} height={500} />
               <div className="px-6 py-4">
                 <div className="font-semibold text-white text-xl mb-2 text-center">
                   {project.title}
