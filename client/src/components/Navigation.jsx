@@ -21,7 +21,7 @@ const Navigation = () => {
         <li
           className={`font-normal hover:underline cursor-pointer text-[16px] mr-10`}
         >
-          <a href="">Blog </a>
+          <a href="#">Blog </a>
         </li>
         <li className="">
           <a
