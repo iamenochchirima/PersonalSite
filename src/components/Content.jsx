@@ -21,10 +21,10 @@ const Content = () => {
             Welcome!
           </h1>
           <p
-            className={`${styles.paragraph} md:text-justify mt-2 font-medium leading-6`}
+            className={`${styles.paragraph} md:text-justify mt-2 leading-6`}
           >
             My name is Enoch Chirima, and Im a 
-            <span className="ml-1 font-bold text-white">Full-stack software developer</span> with a passion for creating websites
+            <span className="ml-1 font-medium text-white">Full-stack software developer</span> with a passion for creating websites
             and web applications that solve real-world problems. With expertise
             in both front-end and back-end development, I bring a well-rounded
             skill set to every project. If you are looking for a freelance
