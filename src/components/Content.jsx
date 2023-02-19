@@ -22,11 +22,11 @@ const Content = () => {
             Welcome!
           </h1>
           <p className={`${styles.paragraph} text-justify mt-2 font-medium leading-6`}>
-            I'm Enoch Chirima, a full-stack software developer. I create
+            I am Enoch Chirima, a full-stack software developer. I create
             websites and web applications solving real-world problems. With
             expertise in back-end and front end development. Are you looking for
             a freelance developer or seeking to hire a full-time team member?,
-            Let's connect and chat about how I can bring my skills and
+            Lets connect and chat about how I can bring my skills and
             experience to your next projects on the links below!
           </p>
 
@@ -48,7 +48,7 @@ const Content = () => {
       </div>
       <div className="md:col-span-3 lg:col-span-3 md:my-0 my-10 lg:mr-10 lg:pr-6">
         <ProjectsContainer />
-        <h1 className="text-center text-white font-semibold py-5 text-xl">Tools and services I'm currently skilled in and work with:</h1>
+        <h1 className="text-center text-white font-semibold py-5 text-xl">Tools and services Im currently skilled in and work with:</h1>
         <Tools />
       </div>
     </section>
