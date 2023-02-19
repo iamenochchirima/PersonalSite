@@ -1,21 +1,18 @@
 import { Inter } from "@next/font/google";
 import Navigation from "@/components/Navigation";
-import Hero from "@/components/Content";
+import Content from "@/components/Content";
 import styles from "../styles/styles";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="bg-primary font-poppins w-full overflow-hidden text-dimWhite ">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
+    <div className="bg-primary font-poppins w-full overflow-hidden text-dimWhite">
           <Navigation />
-        </div>
-      </div>
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Hero />
+          <Content />
         </div>
       </div>
     </div>
