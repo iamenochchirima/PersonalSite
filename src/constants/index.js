@@ -22,7 +22,7 @@ export const projects = [
     title: "Exodt",
     imageSrc: "/setup.jpg",
     description:
-      "An eBay-like e-commerce auction site that will allow users to post auction listings, place bids on listings, comment on those listings, and add listings to a “watchlist.” CS50W PROJECT-2",
+      "Fusce tempus nibh urna, vitae venenatis lorem malesuada ac. Cras vehicula iaculis hendrerit. Proin dictum mauris quis eros tincidunt, id pretium arcu tempus. Sed ac sem ut augue pharetra rhoncus vel",
     tools: ["Python", "Django", "HTML", "CSS", "JavaScript"],
     codeLink: "https://github.com/yourusername/yourproject",
     visitLink: "https://www.yoursite.com",
@@ -31,7 +31,7 @@ export const projects = [
     id: 2,
     title: "Commerce",
     imageSrc: "/setup1.jpg",
-    description: "My Second Project",
+    description: "Fusce tempus nibh urna, vitae venenatis lorem malesuada ac. Cras vehicula iaculis hendrerit. Proin dictum mauris quis eros tincidunt, id pretium arcu tempus. Sed ac sem ut augue pharetra rhoncus vel",
     tools: ["React", "Node.js", "Express", "MongoDB"],
     codeLink: "https://github.com/yourusername/yourproject",
     visitLink: "https://www.yoursite.com",

@@ -6,6 +6,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Enoch Chirima</title>
+        <link rel="icon" href="/myicon..png" />
       </Head>
       <Component {...pageProps} />
     </>

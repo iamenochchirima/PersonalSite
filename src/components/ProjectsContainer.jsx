@@ -24,7 +24,7 @@ const ProjectsContainer = () => {
                 <div className="font-semibold text-white text-xl mb-2 text-center">
                   {project.title}
                 </div>
-                <div className="text-justify">{project.description}</div>
+                <div className="">{project.description}</div>
                 <div className="my-4 ">
                   <ul className="list-none  items-center flex flex-wrap ">
                     {project.tools.map((tool) => (
