@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { MdFileDownload } from "react-icons/md";
-import Link from 'next/link'
+import Link from "next/link";
 
 const Navigation = () => {
   const [toggle, settoggle] = useState(false);
@@ -48,14 +48,19 @@ const Navigation = () => {
         >
           <ul className="list-none flex-1 items-center flex-col justify-end ">
             <li className={`font-normal cursor-pointer text-[16px] mb-4`}>
-            <Link href="/">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li className={`font-normal cursor-pointer text-[16px] mb-4`}>
               <a href="">Blog </a>
             </li>
             <li className={`font-normal cursor-pointer text-[16px] mb-4`}>
-              <a className="flex items-center cursor-pointer" href="/Resume.pdf">Resume
-            <MdFileDownload className="ml-2" /></a>
+              <a
+                className="flex items-center cursor-pointer"
+                href="https://drive.google.com/file/d/181f1Ncpc7-5p3L-cL8exwoMCNXTkJY23/view?usp=sharing"
+              >
+                Resume
+                <MdFileDownload className="ml-2" />
+              </a>
             </li>
           </ul>
         </div>
