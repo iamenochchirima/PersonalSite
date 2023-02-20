@@ -26,7 +26,7 @@ const Navigation = () => {
         <li className="">
           <a
             className="flex items-center cursor-pointer bg-gradient-to-r from-blue-400 via-blue-400 to-indigo-400 text-white px-4 py-2 rounded-md ml-4"
-            href="/Resume.pdf"
+            href="https://drive.google.com/file/d/181f1Ncpc7-5p3L-cL8exwoMCNXTkJY23/view?usp=sharing"
           >
             Resume
             <MdFileDownload className="ml-2" />
