@@ -21,7 +21,6 @@ const App = ({ Component, pageProps }) => {
     <>
       <Head>
       <title>Enoch Chirima</title>
-        <link rel="icon" href="/myicon..png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
