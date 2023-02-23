@@ -1,13 +1,12 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { useAmp } from "next/amp";
 
 import { GA_TRACKING_ID } from "../lib/gtag";
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head>
-        <link rel="icon" href="/myicon..png" />
+      <link rel="icon" href="/myicon.png" />
       </Head>
       <body>
         <Main />
