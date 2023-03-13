@@ -4,19 +4,19 @@ import Image from "next/image";
 import { FaCode, FaEye } from "react-icons/fa";
 import {projects} from "@/constants";
 
-const ProjectsContainer = () => {
+const Projects = () => {
   return (
-    <div>
+    <div className="px-5 md:px-10">
       <div className="justify-center items-center">
         <h1 className="font-poppins text-3xl font-bold text-white text-center">
-          Projects
+         My Projects
         </h1>
       </div>
-      <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 justify-items-center justify-center">
+      <div className="grid sm:grid-cols-3 gap-4 justify-items-center justify-center">
         {projects.map((project) => {
           return (
             <div
-              className="max-w-sm rounded-md overflow-hidden shadow-slate-400 shadow-md  md:col-span-1 lg:col-span-1 my-10 mx-4"
+              className="max-w-sm bg-gray-900 overflow-hidden  md:col-span-1 lg:col-span-1 my-10"
               key={project.id}
             >
               <Image src={project.imageSrc} alt="project-image" width={500} height={500} />
@@ -60,4 +60,4 @@ const ProjectsContainer = () => {
   );
 };
 
-export default ProjectsContainer;
+export default Projects;

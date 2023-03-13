@@ -36,6 +36,15 @@ export const projects = [
     codeLink: "https://github.com/yourusername/yourproject",
     visitLink: "https://www.yoursite.com",
   },
+  {
+    id: 3,
+    title: "Commerce",
+    imageSrc: "/setup1.jpg",
+    description: "Fusce tempus nibh urna, vitae venenatis lorem malesuada ac. Cras vehicula iaculis hendrerit. Proin dictum mauris quis eros tincidunt, id pretium arcu tempus. Sed ac sem ut augue pharetra rhoncus vel",
+    tools: ["React", "Node.js", "Express", "MongoDB"],
+    codeLink: "https://github.com/yourusername/yourproject",
+    visitLink: "https://www.yoursite.com",
+  },
 ];
 
 export const tools = [
