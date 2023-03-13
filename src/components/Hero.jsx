@@ -16,7 +16,7 @@ const Hero = () => {
           SOFTWARE DEVELOPER | PYTHON | JAVASCRIPT
         </h1>
         <p className="py-5 text-5xl font-sans font-bold text-white">
-          Welcome! I'm Enoch Chirima.
+          Welcome! Im Enoch Chirima.
         </p>
         <p className={`${styles.paragraph} text-start mt-2  leading-6`}>
           Im a
