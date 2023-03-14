@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/styles";
-import { AiOutlineMenu } from "react-icons/ai";
-import { IoCloseSharp } from "react-icons/io5";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { MdFileDownload } from "react-icons/md";
 import Link from "next/link";
 
@@ -28,10 +27,10 @@ const Navbar = () => {
       <div className={`bg-primary ${styles.flexStart}`}>
         <div
           className={` ${
-            isSticky ? `fixed top-0 z-50 opacity-90 ` : "relative"
+            isSticky ? `fixed  bg-gray-900 top-0 z-50 opacity-90 ` : "relative bg-black"
           } ${
             styles.boxWidth
-          } bg-gray-900 w-full pt-1 flex justify-between items-center text-white navbar`}
+          } w-full pt-1 flex justify-between items-center text-white navbar`}
         >
           <h1 className=" xs:ml-6 md:ml-16 ss:ml-16 font-bold font-sans text-xl text-white ">
             Enoch
@@ -61,33 +60,44 @@ const Navbar = () => {
           <div className="sm:hidden flex py-4 pr-3 pl-1 flex-1 justify-end items-center ">
             <button
               className="text-3xl mr-3 object-contain"
-              onClick={() => settoggle((prev) => !prev)}
+              onClick={() => settoggle(true)}
             >
-              {toggle ? <IoCloseSharp /> : <AiOutlineMenu />}
+              <AiOutlineMenu />
             </button>
-            <div
-              className={`${
-                toggle ? "flex" : "hidden"
-              } p-6 bg-black-gradient absolute top-20 right-0 mx-4 mb-2 min-w-[140px] rounded-xl sidebar`}
-            >
-              <ul className="list-none flex-1 items-center flex-col justify-end ">
-                <li className={`font-normal cursor-pointer text-[16px] mb-4`}>
-                  <Link href="/">Home</Link>
-                </li>
-                <li className={`font-normal cursor-pointer text-[16px] mb-4`}>
-                  <a href="">Blog </a>
-                </li>
-                <li className={`font-normal cursor-pointer text-[16px] mb-4`}>
-                  <a
-                    className="flex items-center cursor-pointer"
-                    href="https://drive.google.com/file/d/181f1Ncpc7-5p3L-cL8exwoMCNXTkJY23/view?usp=sharing"
-                  >
-                    Resume
-                    <MdFileDownload className="ml-2" />
-                  </a>
-                </li>
-              </ul>
-            </div>
+            {toggle && (
+              <div
+                className={` fixed top-0 left-0 right-0 bottom-0 z-50 bg-black bg-opacity-70`}
+              >
+                <div className="absolute top-0 right-0 z-10 min-w-[200px] bg-gray-800 px-5">
+                  <button className="text-xl pb-5 pt-3" onClick={() => settoggle(false)}>
+                    <AiOutlineClose />
+                  </button>
+                  <ul className="list-none flex-1 items-center flex-col justify-end ">
+                    <li
+                      className={`font-normal cursor-pointer text-[16px] mb-4`}
+                    >
+                      <Link href="/">Home</Link>
+                    </li>
+                    <li
+                      className={`font-normal cursor-pointer text-[16px] mb-4`}
+                    >
+                      <a href="">Blog </a>
+                    </li>
+                    <li
+                      className={`font-normal cursor-pointer text-[16px] mb-4`}
+                    >
+                      <a
+                        className="flex items-center cursor-pointer"
+                        href="https://drive.google.com/file/d/181f1Ncpc7-5p3L-cL8exwoMCNXTkJY23/view?usp=sharing"
+                      >
+                        Resume
+                        <MdFileDownload className="ml-2" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

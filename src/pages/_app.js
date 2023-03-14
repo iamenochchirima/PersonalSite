@@ -4,6 +4,8 @@ import { useRouter } from 'next/router'
 import Script from 'next/script'
 import { useEffect } from 'react'
 import * as gtag from '../lib/gtag'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
@@ -39,6 +41,7 @@ const App = ({ Component, pageProps }) => {
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
       />
+      <ToastContainer />
       <Component {...pageProps} />
     </>
   )

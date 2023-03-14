@@ -36,7 +36,7 @@ const Hero = () => {
           with me through the links below, and lets work together to build
           something great!
         </p>
-        <p className="text-white text-3xl mt-5 font-bold">Lets Connect</p>
+        <h1 className="text-white text-3xl mt-5 font-bold">Lets Connect</h1>
         <div className=" text-4xl text-white flex py-5 space-x-4">
           <a href="https://www.linkedin.com/in/iamenochchirima/">
             <AiFillLinkedin />
@@ -47,7 +47,7 @@ const Hero = () => {
           <a href="https://twitter.com/iamenochchirima">
             <AiFillTwitterCircle />
           </a>
-          <a href="https://api.whatsapp.com/send?phone=+263774266830">
+          <a href="https://wa.me/+263774266830/">
             <RiWhatsappFill />
           </a>
         </div>
