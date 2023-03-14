@@ -140,7 +140,7 @@ const ContactForm = () => {
           <span className="error-message">This field is required</span>
         </div>
         <button
-          className="bg-gray-800 py-2 px-5 m-1 text-white text-lg rounded-lg"
+          className="bg-gray-800 py-2 px-5 mx-2 text-white text-lg rounded-lg"
           type="submit"
         >
           {isLoading ? (

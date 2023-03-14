@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <div className=" xl:px-0 sm:px-16 px-6 sm:align-middle">
       <div className="pt-5 relative z-10">
-        <h1 className="font-semibold text-red-300">
+        <h1 className="font-semibold text-dimWhite">
           SOFTWARE DEVELOPER | PYTHON | JAVASCRIPT
         </h1>
         <p className="py-5 text-5xl font-sans font-bold text-white">
@@ -36,7 +36,7 @@ const Hero = () => {
           with me through the links below, and lets work together to build
           something great!
         </p>
-        <h1 className="text-white text-3xl mt-5 font-bold">Lets Connect</h1>
+        <h1 className="text-white text-xl mt-5 font-medium">Lets Connect</h1>
         <div className=" text-4xl text-white flex py-5 space-x-4">
           <a href="https://www.linkedin.com/in/iamenochchirima/">
             <AiFillLinkedin />
