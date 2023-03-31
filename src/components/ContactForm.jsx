@@ -90,7 +90,7 @@ const ContactForm = () => {
       <p className="text-center font-thin text-sm ">
         Send me an email message by simply filling and sending the form below or
         send a direct message via WhatsApp{" "}
-        <a href="https://wa.me/+263774266830/" target="_blank">
+        <a href="https://wa.me/+263774266830/" target="_blank" rel="noreferrer">
           <span className="font-mono text-white underline">Here</span>
         </a>{" "}
       </p>

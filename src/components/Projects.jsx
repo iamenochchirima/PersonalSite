@@ -39,13 +39,17 @@ const Projects = () => {
                 </div>
                 <div className="flex justify-center text-white space-x-10">
                   <Link
-                    href={project.codeLink}
+                    href={project.codeLink} 
                     className=" hover:bg-gray-900 px-2 py-1 rounded flex items-center"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <FaCode /> <span className="ml-2">Code</span>
                   </Link>
                   <Link
                     href={project.visitLink}
+                    target="_blank"
+                    rel="noreferrer"
                     className="hover:bg-gray-900 px-2 py-1 rounded flex items-center"
                   >
                     <FaEye /> <span className="ml-2">Visit Site</span>
