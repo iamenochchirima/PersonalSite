@@ -38,16 +38,16 @@ const Hero = () => {
         </p>
         <h1 className="text-white text-xl mt-5 font-medium">Lets Connect</h1>
         <div className=" text-4xl text-white flex py-5 space-x-4">
-          <a href="https://www.linkedin.com/in/iamenochchirima/">
+          <a href="https://www.linkedin.com/in/iamenochchirima/" target="_blank">
             <AiFillLinkedin />
           </a>
-          <a href="https://github.com/iamenochchirima">
+          <a href="https://github.com/iamenochchirima" target="_blank">
             <AiFillGithub />
           </a>
-          <a href="https://twitter.com/iamenochchirima">
+          <a href="https://twitter.com/iamenochchirima" target="_blank">
             <AiFillTwitterCircle />
           </a>
-          <a href="https://wa.me/+263774266830/">
+          <a href="https://wa.me/+263774266830/" target="_blank">
             <RiWhatsappFill />
           </a>
         </div>

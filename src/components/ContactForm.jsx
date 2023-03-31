@@ -46,15 +46,15 @@ const ContactForm = () => {
           name: false,
           email: false,
           message: false,
-        }),
-          toast.success("Message sent successfully!", {
-            autoClose: 5000,
-            position: "top-center",
-            hideProgressBar: true,
-          });
+        });
+        toast.success("Message sent successfully!", {
+          autoClose: 5000,
+          position: "top-center",
+          hideProgressBar: true,
+        });
         setIsLoading(false);
       } else {
-        toast.error('Something went wrong, Try again latter', {
+        toast.error("Something went wrong, Try again latter", {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: true,
@@ -63,13 +63,13 @@ const ContactForm = () => {
           draggable: true,
           progress: undefined,
           theme: "light",
-          });
-          setIsLoading(false);
+        });
+        setIsLoading(false);
       }
     } catch (error) {
       console.log(error.message);
       setIsLoading(false);
-      toast.error('Something went wrong, Try again latter', {
+      toast.error("Something went wrong, Try again latter", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: true,
@@ -78,7 +78,7 @@ const ContactForm = () => {
         draggable: true,
         progress: undefined,
         theme: "light",
-        });
+      });
     }
   };
 
@@ -90,7 +90,7 @@ const ContactForm = () => {
       <p className="text-center font-thin text-sm ">
         Send me an email message by simply filling and sending the form below or
         send a direct message via WhatsApp{" "}
-        <a href="https://wa.me/+263774266830/">
+        <a href="https://wa.me/+263774266830/" target="_blank">
           <span className="font-mono text-white underline">Here</span>
         </a>{" "}
       </p>
