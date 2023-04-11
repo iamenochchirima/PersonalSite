@@ -23,7 +23,7 @@ const Hero = () => {
           <span className="ml-1 font-medium text-white">
             Full-stack software developer
           </span>
-          with a passion for solving real-world problems through web solutions. Whether it's creating web
+          with a passion for solving real-world problems through web solutions. Whether it&apos;s creating web
           applications or websites, my goal is to deliver
           user-friendly and innovative solutions that make a difference. With
           experience in both back-end and front-end development, I bring a
