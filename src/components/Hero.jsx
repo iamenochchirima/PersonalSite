@@ -22,20 +22,20 @@ const Hero = () => {
           I&apos;m a
           <span className="ml-1 font-medium text-white">
             Full-stack software developer
-          </span>
-          with a passion for solving real-world problems through web solutions. Whether it&apos;s creating web
-          applications or websites, my goal is to deliver
-          user-friendly and innovative solutions that make a difference. With
-          experience in both back-end and front-end development, I bring a
+          </span>{" "}
+          with a passion for solving real-world problems through web solutions.
+          Whether it&apos;s creating web applications or websites, my goal is to
+          deliver user-friendly and innovative solutions that make a difference.
+          With experience in both back-end and front-end development, I bring a
           well-rounded skill set to every project.
         </p>
         <br />
         <p>
           If you are looking for a freelance developer or seeking to hire a
-          full-time or a part time team member, I&apos;m available remotely and I&apos;d love to chat with you about how I can
-          contribute to your next projects. Please feel free to chat and connect
-          with me through the links below, and lets work together to build
-          something great!
+          full-time or a part time team member, I&apos;m available remotely and
+          I&apos;d love to chat with you about how I can contribute to your next
+          projects. Please feel free to chat and connect with me through the
+          links below, and lets work together to build something great!
         </p>
         <h1 className="text-white text-xl mt-5 font-medium">Lets Connect</h1>
         <div className=" text-4xl text-white flex py-5 space-x-4">
