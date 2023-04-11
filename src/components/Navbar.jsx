@@ -49,6 +49,8 @@ const Navbar = () => {
             <li className="">
               <a
                 className="flex items-center cursor-pointer bg-red-600 text-white px-4 py-2 rounded-md ml-4"
+                target="_blank"
+                rel="noreferrer"
                 href="https://drive.google.com/file/d/1bOPxePae0rHWYIRxsZOGAKe4XhzhUBrr/view?usp=share_link"
               >
                 Resume
@@ -88,6 +90,8 @@ const Navbar = () => {
                     >
                       <a
                         className="flex items-center cursor-pointer"
+                        target="_blank"
+                        rel="noreferrer"
                         href="https://drive.google.com/file/d/1bOPxePae0rHWYIRxsZOGAKe4XhzhUBrr/view?usp=share_link"
                       >
                         Resume
