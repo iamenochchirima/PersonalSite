@@ -49,7 +49,7 @@ const Navbar = () => {
             <li className="">
               <a
                 className="flex items-center cursor-pointer bg-red-600 text-white px-4 py-2 rounded-md ml-4"
-                href="https://drive.google.com/file/d/181f1Ncpc7-5p3L-cL8exwoMCNXTkJY23/view?usp=sharing"
+                href="https://drive.google.com/file/d/1ukqBqI5XR2bG8yizw43esogmiKeQFXJF/view?usp=share_link"
               >
                 Resume
                 <MdFileDownload className="ml-2" />
@@ -88,7 +88,7 @@ const Navbar = () => {
                     >
                       <a
                         className="flex items-center cursor-pointer"
-                        href="https://drive.google.com/file/d/181f1Ncpc7-5p3L-cL8exwoMCNXTkJY23/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1ukqBqI5XR2bG8yizw43esogmiKeQFXJF/view?usp=share_link"
                       >
                         Resume
                         <MdFileDownload className="ml-2" />
