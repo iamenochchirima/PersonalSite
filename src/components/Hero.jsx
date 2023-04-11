@@ -16,38 +16,55 @@ const Hero = () => {
           SOFTWARE DEVELOPER | PYTHON | JAVASCRIPT
         </h1>
         <p className="py-5 text-5xl font-sans font-bold text-white">
-          Welcome! Im Enoch Chirima.
+          Welcome! I&apos;m Enoch Chirima.
         </p>
         <p className={`${styles.paragraph} text-start mt-2  leading-6`}>
-          Im a
+          I&apos;m a
           <span className="ml-1 font-medium text-white">
             Full-stack software developer
-          </span>{" "}
-          with a passion for creating websites and web applications that solve
-          real-world problems. With expertise in both front-end and back-end
-          development, I bring a well-rounded skill set to every project.
-        </p>{" "}
+          </span>
+          with a passion for solving real-world problems through web solutions. Whether it's creating web
+          applications or websites, my goal is to deliver
+          user-friendly and innovative solutions that make a difference. With
+          experience in both back-end and front-end development, I bring a
+          well-rounded skill set to every project.
+        </p>
         <br />
         <p>
-          {" "}
           If you are looking for a freelance developer or seeking to hire a
-          full-time team member, Id love to chat with you about how I can
+          full-time or a part time team member, I&apos;m available remotely and I&apos;d love to chat with you about how I can
           contribute to your next projects. Please feel free to chat and connect
           with me through the links below, and lets work together to build
           something great!
         </p>
         <h1 className="text-white text-xl mt-5 font-medium">Lets Connect</h1>
         <div className=" text-4xl text-white flex py-5 space-x-4">
-          <a href="https://www.linkedin.com/in/iamenochchirima/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/iamenochchirima/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillLinkedin />
           </a>
-          <a href="https://github.com/iamenochchirima" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/iamenochchirima"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillGithub />
           </a>
-          <a href="https://twitter.com/iamenochchirima" target="_blank" rel="noreferrer">
+          <a
+            href="https://twitter.com/iamenochchirima"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillTwitterCircle />
           </a>
-          <a href="https://wa.me/+263774266830/" target="_blank" rel="noreferrer">
+          <a
+            href="https://wa.me/+263774266830/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <RiWhatsappFill />
           </a>
         </div>

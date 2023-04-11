@@ -12,6 +12,7 @@ import {
   SiMaterialui,
   SiTailwindcss,
   SiFigma,
+  SiGooglecloud,
 } from "react-icons/si";
 import { FaCss3, FaHtml5, FaPython, FaReact, FaAws } from "react-icons/fa";
 import { DiGit } from "react-icons/di";
@@ -23,7 +24,16 @@ export const projects = [
     imageSrc: "/mmm.png",
     description:
       "A full stack project for the Modern Minds Magazine website. It consist of a newsletter system using a third party email servive, secure user registration functionality, and a user-friendly interface for browsing and reading articles",
-    tools: ["Python", "Django", "JavaScript", "Next.js", "Redux toolkit", "Tailwind css", "Postgresql", "AWS"],
+    tools: [
+      "Python",
+      "Django",
+      "JavaScript",
+      "Next.js",
+      "Redux toolkit",
+      "Tailwind css",
+      "Postgresql",
+      "Google Cloud",
+    ],
     codeLink: "https://github.com/iamenochchirima/ModernMinds",
     visitLink: "https://www.modernmindsmag.com/",
   },
@@ -31,7 +41,8 @@ export const projects = [
     id: 2,
     title: "Rose Normans Fooundation",
     imageSrc: "/foundation.png",
-    description: "A simple full stack website for Rose Normans Foundation, with a blog and other simple rest api fetching functinality",
+    description:
+      "A simple full stack website for Rose Normans Foundation, with a blog and other simple rest api fetching functinality",
     tools: ["Next.js", "Tailwind css", "Django", "Postgresql"],
     codeLink: "https://github.com/iamenochchirima/RoseNormansFoundation",
     visitLink: "https://rose-normans-foundation.vercel.app/",
@@ -39,10 +50,11 @@ export const projects = [
   {
     id: 3,
     title: "EXODT",
-    imageSrc: "/setup1.jpg",
-    description: "Fusce tempus nibh urna, vitae venenatis lorem malesuada ac. Cras vehicula iaculis hendrerit. Proin dictum mauris quis eros tincidunt, id pretium arcu tempus. Sed ac sem ut augue pharetra rhoncus vel",
-    tools: ["React", "Node.js", "Express", "MongoDB"],
-    codeLink: null,
+    imageSrc: "/coming-soon.jpg",
+    description:
+      "Exodt is a social web app I am creating using django rest framework and next.js. It have real time communication system which I implimented using socket.io, real time notifications, instant direct messages and group chating.",
+    tools: ["Django", "Next.js", "Node.js", "Express", "Socket.io" , "Redux toolkit", "RTK Query", "Tailwind css" , "AWS" , "Postgresql"],
+    codeLink: "https://github.com/iamenochchirima/Exodt",
     visitLink: null,
   },
 ];
@@ -129,14 +141,14 @@ export const tools = [
     icon: <FaAws />,
   },
   {
+    id: 20,
+    name: "Google Cloud",
+    icon: <SiGooglecloud />,
+  },
+  {
     id: 17,
     name: "Tailwind",
     icon: <SiTailwindcss />,
-  },
-  {
-    id: 18,
-    name: "Material Ui",
-    icon: <SiMaterialui />,
   },
   {
     id: 19,
