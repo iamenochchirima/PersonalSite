@@ -84,16 +84,20 @@ const ContactForm = () => {
 
   return (
     <div className=" mx-5 md:mx-10 p-2">
-      <h1 className="text-white text-center text-3xl mt-5 font-bold">
-        Lets Talk
-      </h1>
-      <p className="text-center font-thin text-sm ">
-        Send me an email message by simply filling and sending the form below or
-        send a direct message via WhatsApp{" "}
-        <a href="https://wa.me/+263774266830/" target="_blank" rel="noreferrer">
-          <span className="font-mono text-white underline">Here</span>
-        </a>{" "}
-      </p>
+      <div className="flex justify-center mb-5">
+        <div className="md:w-3/4">
+          <h1 className="text-white text-center text-3xl mt-5 font-bold">
+            Lets Talk
+          </h1>
+          <p className="md:text-center font-thin text-sm md:text-base">
+            I'm thrilled that you're checking out my work! If there's something
+            on my site that's piqued your interest, If you've got an offer that
+            would make my day, or if you just want to say hi, please don't
+            hesitate to reach out. Just drop me a message using the form below. Let's make some great digital magic
+            together!
+          </p>
+        </div>
+      </div>
       <form className="text-white gap-y-4" onSubmit={handleSubmit}>
         <div className="form-div">
           <label htmlFor="name">Name:</label>
