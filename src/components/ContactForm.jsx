@@ -87,13 +87,13 @@ const ContactForm = () => {
       <div className="flex justify-center mb-5">
         <div className="md:w-3/4">
           <h1 className="text-white text-center text-3xl mt-5 font-bold">
-            Lets Talk
+            Let&apos;s Talk
           </h1>
           <p className="md:text-center font-thin text-sm md:text-base">
-            I'm thrilled that you're checking out my work! If there's something
-            on my site that's piqued your interest, If you've got an offer that
-            would make my day, or if you just want to say hi, please don't
-            hesitate to reach out. Just drop me a message using the form below. Let's make some great digital magic
+            I&apos;m thrilled that you&apos;re checking out my work! If there&apos;s something
+            on my site that&apos;s piqued your interest, If you&apos;ve got an offer that
+            would make my day, or if you just want to say hi, please don&apos;t
+            hesitate to reach out. Just drop me a message using the form below. Let&apos;s make some great digital magic
             together!
           </p>
         </div>
