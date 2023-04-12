@@ -23,7 +23,7 @@ export const projects = [
     title: "Modern Minds Magazine",
     imageSrc: "/mmm.png",
     description:
-      "A full stack project for the Modern Minds Magazine website. It consist of a newsletter system using a third party email servive, secure user registration functionality, and a user-friendly interface for browsing and reading articles",
+      "A full stack website for the Modern Minds Magazine. It consist of a newsletter system using a third party email servive, secure user registration and authentication system and a user-friendly interface for browsing and reading articles",
     tools: [
       "Python",
       "Django",
