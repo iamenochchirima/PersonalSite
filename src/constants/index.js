@@ -23,7 +23,7 @@ export const projects = [
     title: "Modern Minds Magazine",
     imageSrc: "/mmm.png",
     description:
-      "A full stack website for the Modern Minds Magazine. It consist of a newsletter system using a third party email servive, secure user registration and authentication system and a user-friendly interface for browsing and reading articles",
+      "A full stack website for the Modern Minds Magazine. It consists of a newsletter system using a third party email servive, secure user registration and authentication system and a user-friendly interface for browsing and reading articles",
     tools: [
       "Python",
       "Django",
@@ -39,10 +39,10 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Rose Normans Fooundation",
+    title: "Rose Normans Foundation",
     imageSrc: "/foundation.png",
     description:
-      "A simple full stack website for Rose Normans Foundation, with a blog and other simple rest api fetching functinality",
+      "A simple full stack website for Rose Normans Foundation, with a blog and other simple rest api fetching functionality",
     tools: ["Next.js", "Tailwind css", "Django", "Postgresql"],
     codeLink: "https://github.com/iamenochchirima/RoseNormansFoundation",
     visitLink: "https://rose-normans-foundation.vercel.app/",
@@ -52,7 +52,7 @@ export const projects = [
     title: "EXODT",
     imageSrc: "/coming-soon.jpg",
     description:
-      "Exodt is a social web app I am creating using django rest framework and next.js. It have real time communication system which I implimented using socket.io, real time notifications, instant direct messages and group chating.",
+      "Exodt is a social web app I am creating using django rest framework and next.js. It has real time communication system which I implimented using socket.io, real time notifications, instant direct messages and group chating.",
     tools: ["Django", "Next.js", "Node.js", "Express", "Socket.io" , "Redux toolkit", "RTK Query", "Tailwind css" , "AWS" , "Postgresql"],
     codeLink: "https://github.com/iamenochchirima/Exodt",
     visitLink: null,
