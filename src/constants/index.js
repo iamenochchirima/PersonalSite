@@ -16,6 +16,7 @@ import {
 } from "react-icons/si";
 import { FaCss3, FaHtml5, FaPython, FaReact, FaAws } from "react-icons/fa";
 import { DiGit } from "react-icons/di";
+import Image from "next/image";
 
 export const projects = [
   {
@@ -68,7 +69,12 @@ export const tools = [
   {
     id: 2,
     name: "JavaScript",
-    icon: <SiJavascript />,
+    icon: <SiJavascript  />,
+  },
+  {
+    id: 21,
+    name: "Motoko",
+    icon: <Image src="/motoko.png" height={50} width={50} alt="motoko icon" />,
   },
   {
     id: 3,

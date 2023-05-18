@@ -21,7 +21,7 @@ const Hero = () => {
         <p className={`${styles.paragraph} text-start mt-2  leading-6`}>
           I&apos;m a
           <span className="ml-1 font-medium text-white">
-            Full-stack software developer
+            Full-stack software developer and a blockchain developer
           </span>{" "}
           with a passion for solving real-world problems through web solutions.
           Whether it&apos;s creating web applications or websites, my goal is to
