@@ -13,7 +13,7 @@ const Hero = () => {
     <div className=" xl:px-0 sm:px-16 px-6 sm:align-middle">
       <div className="pt-5 relative z-10">
         <h1 className="font-semibold text-dimWhite">
-          SOFTWARE DEVELOPER | PYTHON | JAVASCRIPT
+          SOFTWARE ENGINEER | WEB2 | WEB3
         </h1>
         <p className="py-5 text-5xl font-sans font-bold text-white">
           Welcome! I&apos;m Enoch Chirima.
