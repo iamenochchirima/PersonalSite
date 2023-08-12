@@ -10,7 +10,7 @@ import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
-    <div className=" xl:px-0 sm:px-16 px-6 sm:align-middle">
+    <div className=" mt-5 xl:px-0 sm:px-16 px-6 sm:align-middle">
       <div className="pt-5 relative z-10">
         <h1 className="font-semibold text-dimWhite">
           SOFTWARE ENGINEER | WEB2 | WEB3

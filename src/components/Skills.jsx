@@ -1,7 +1,7 @@
 import React from "react";
 import { tools } from "@/constants";
 
-const Tools = () => {
+const Skills = () => {
   return (
     <div className="px-5 md:px-10">
       <h1 className="text-center text-white font-bold py-5 px-5 text-2xl">
@@ -27,4 +27,4 @@ const Tools = () => {
   );
 };
 
-export default Tools;
+export default Skills;

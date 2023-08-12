@@ -1,19 +1,67 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "../styles/styles";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { MdFileDownload } from "react-icons/md";
 import Link from "next/link";
 
-const Navbar = ({ scrollToSection, projects, tools, contact }) => {
+const Navbar = ({ scrollToSection, projects, skills, about, contact }) => {
   const [toggle, settoggle] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      // You can adjust this threshold as needed
+      const scrollThreshold = 100;
+
+      if (scrollY > scrollThreshold) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  console.log(isSticky)
+
+
+  const [scrollDirection, setScrollDirection] = useState(null);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.scrollY;
+      const direction = scrollY > lastScrollY ? "down" : "up";
+      if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
+        setScrollDirection(direction);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+
+    window.addEventListener("scroll", updateScrollDirection); // add event listener
+
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection); // clean up
+    };
+  }, [scrollDirection]);
+
+
+  console.log(scrollDirection)
+
 
   return (
     <div className="bg-primary font-poppins w-full overflow-hidden text-dimWhite">
       <div className={`bg-primary ${styles.flexStart}`}>
         <div
-          className={` top-0 z-50 opacity-90  bg-black
-            } ${styles.boxWidthrelati
-            } w-full pt-1 flex justify-between items-center text-white navbar`}
+          className={` ${scrollDirection === "up" ? `fixed top-0 z-50` : "relative"
+            } ${styles.boxWidth
+            } bg-primary w-full pt-1 flex justify-between items-center text-white navbar`}
         >
           <h1 className=" xs:ml-6 md:ml-16 ss:ml-16 font-bold font-sans text-xl text-white ">
             Enoch
@@ -32,12 +80,17 @@ const Navbar = ({ scrollToSection, projects, tools, contact }) => {
             <li
               className={`font-normal hover:underline cursor-pointer text-[16px] mr-10`}
             >
-              <button onClick={() => scrollToSection(tools)}>Tools</button>
+              <button onClick={() => scrollToSection(skills)}>Skills</button>
             </li>
             <li
               className={`font-normal hover:underline cursor-pointer text-[16px] mr-10`}
             >
-              <button onClick={() => scrollToSection(contact)}>Contact </button>
+              <button onClick={() => scrollToSection(about)}>About me</button>
+            </li>
+            <li
+              className={`font-normal hover:underline cursor-pointer text-[16px] mr-10`}
+            >
+              <button className="py-1.5 px-2 rounded-lg bg-blue-500" onClick={() => scrollToSection(contact)}>Contact me</button>
             </li>
           </ul>
 
@@ -70,12 +123,12 @@ const Navbar = ({ scrollToSection, projects, tools, contact }) => {
                     <li
                       className={`font-normal cursor-pointer text-[16px] mb-4`}
                     >
-                      <button onClick={() => scrollToSection(tools)}>Tools</button>
+                      <button onClick={() => scrollToSection(skills)}>Skills</button>
                     </li>
                     <li
                       className={`font-normal cursor-pointer text-[16px] mb-4`}
                     >
-                      <button onClick={() => scrollToSection(contact)}>Contact </button>
+                      <button className="py-1.5 px-2 rounded-lg bg-blue-500" onClick={() => scrollToSection(contact)}>Contact </button>
                     </li>
                   </ul>
                 </div>
