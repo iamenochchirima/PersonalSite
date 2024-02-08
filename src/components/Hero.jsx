@@ -5,8 +5,7 @@ import {
   AiFillLinkedin,
   AiFillGithub,
 } from "react-icons/ai";
-import { RiWhatsappFill } from "react-icons/ri";
-import { Link } from "react-scroll";
+import { RiWhatsappFill } from "react-icons/ri"
 
 const Hero = () => {
   return (

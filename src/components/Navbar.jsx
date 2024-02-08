@@ -27,8 +27,6 @@ const Navbar = ({ scrollToSection, projects, skills, about, contact }) => {
     };
   }, []);
 
-  console.log(isSticky)
-
 
   const [scrollDirection, setScrollDirection] = useState(null);
 
@@ -50,9 +48,6 @@ const Navbar = ({ scrollToSection, projects, skills, about, contact }) => {
       window.removeEventListener("scroll", updateScrollDirection); // clean up
     };
   }, [scrollDirection]);
-
-
-  console.log(scrollDirection)
 
 
   return (

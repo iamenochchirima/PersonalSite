@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.1.0",
     "@next/font": "13.1.6",
     "@svgr/webpack": "^6.5.1",
     "eslint": "8.34.0",

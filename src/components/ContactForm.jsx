@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { ThreeDots } from "react-loader-spinner";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -23,63 +24,49 @@ const ContactForm = () => {
     event.preventDefault();
     setIsLoading(true);
 
-    const data = {
-      name,
-      email,
-      message,
+    const templateParams = {
+      message: message,
+      from_name: name,
+      from_email: email,
     };
 
-    try {
-      const response = await fetch("/api/mail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+    emailjs
+      .send(
+        "service_515ffkj",
+        "template_k9ogr5i",
+        templateParams,
+        "ni25KjXycoHjn-cD1"
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.status, result.text);
+          console.log("message was sent");
+          toast.success("Message sent successfully!", {
+            autoClose: 5000,
+            position: "top-center",
+            hideProgressBar: true,
+          });
+          setIsLoading(false);
+          setName("");
+          setEmail("");
+          setMessage("");
+          setFocused({
+            name: false,
+            email: false,
+            message: false,
+          });
         },
-        body: JSON.stringify(data),
-      });
+        (error) => {
+          console.log(error);
+          toast.error("Message failed to send!", {
+            autoClose: 5000,
+            position: "top-center",
+            hideProgressBar: true,
+          });
+          setIsLoading(false);
+        }
+      );
 
-      if (response.ok) {
-        setName("");
-        setEmail("");
-        setMessage("");
-        setFocused({
-          name: false,
-          email: false,
-          message: false,
-        });
-        toast.success("Message sent successfully!", {
-          autoClose: 5000,
-          position: "top-center",
-          hideProgressBar: true,
-        });
-        setIsLoading(false);
-      } else {
-        toast.error("Something went wrong, Try again latter", {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
-        setIsLoading(false);
-      }
-    } catch (error) {
-      console.log(error.message);
-      setIsLoading(false);
-      toast.error("Something went wrong, Try again latter", {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
-    }
   };
 
   return (
