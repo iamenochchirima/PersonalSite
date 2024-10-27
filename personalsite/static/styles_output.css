@@ -505,7 +505,11 @@ video {
 .h-screen {
   height: 100vh;
 }
-.bg-blue-500 {
+.bg-gray-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
